@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: relativum-proxy
+    runtime: node
+    buildCommand: ""
+    startCommand: node proxy.js
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
